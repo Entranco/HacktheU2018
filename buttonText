@@ -1,0 +1,16 @@
+final Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+                sendIntent.setData(Uri.parse("sms:"));
+                sendIntent.putExtra("address", "shelter number");
+
+                MainActivity.this.startActivity(sendIntent);
+
+
+            }
+        }
+
+        );
+        
