@@ -28,7 +28,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file leaf-file-name="PetSearch.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/e/piepi/shelterapp/PetSearch.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -364,13 +364,78 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
+            <path>
+              <item name="ShelterApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ShelterApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShelterApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ShelterApp" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShelterApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ShelterApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShelterApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ShelterApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShelterApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ShelterApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShelterApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ShelterApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShelterApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ShelterApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="e" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShelterApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ShelterApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="e" type="462c0819:PsiDirectoryNode" />
+              <item name="piepi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShelterApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="ShelterApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="e" type="462c0819:PsiDirectoryNode" />
+              <item name="piepi" type="462c0819:PsiDirectoryNode" />
+              <item name="shelterapp" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="ShelterApp" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -599,14 +664,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/e/piepi/shelterapp/PetSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/e/piepi/shelterapp/PetSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
