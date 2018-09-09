@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class PetSearch extends AppCompatActivity {
     // Information previously determined by a different scene
     private String[] filters = {"Brown", "German_Shepherd"};
-    private int queryCount = 0;
+    private static int queryCount = 0;
     // all TextViews and Buttons from the App
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +48,6 @@ public class PetSearch extends AppCompatActivity {
                 try {
                     petInfo = new ConnectToServer().execute(output, null, null).get();
                 } catch (Exception ex) {
-
                 }
                 queryCount++;
 
@@ -68,6 +67,7 @@ public class PetSearch extends AppCompatActivity {
                 txtDescription.setText(parser.next().replaceAll("_", " "));
             }
         });
+        btnNextPet.callOnClick();
     }
 /*
     protected class ConnectToServer extends AsyncTask<String, String, String> {

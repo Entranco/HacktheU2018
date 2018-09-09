@@ -1,5 +1,6 @@
 package e.piepi.shelterapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,8 @@ public class LogIn extends AppCompatActivity {
                     String info = new ConnectToServer().execute(output, null, null).get();
                 } catch (Exception ex) {
                 }
+
+                startActivity(new Intent(LogIn.this, PetSearch.class));
             }
         });
     }
