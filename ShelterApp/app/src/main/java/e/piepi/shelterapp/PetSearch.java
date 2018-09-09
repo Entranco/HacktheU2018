@@ -35,12 +35,12 @@ public class PetSearch extends AppCompatActivity {
         protected Void doInBackground(Void... arg0){
             try{
                 Socket client = new Socket("10.0.2.2", 8888);
-                System.out.println("connected successfully to " + client.getRemoteSocketAddress());
-                OutputStream outStream = client.getOutputStream();
-                DataOutputStream dataOut = new DataOutputStream(outStream);
-                dataOut.writeUTF("some random stuff");
-                DataInputStream in = new DataInputStream(server.getInputStream);
-                System.out.println(in.readUTF());
+                //System.out.println("connected successfully to " + client.getRemoteSocketAddress());
+                //OutputStream outStream = client.getOutputStream();
+                //DataOutputStream dataOut = new DataOutputStream(outStream);
+                //dataOut.writeUTF("some random stuff");
+                //DataInputStream in = new DataInputStream(.getInputStream);
+                //System.out.println(in.readUTF());
             }catch(IOException ex) {
                 System.out.println("Caught IOException when connecting to a server!");
             }
