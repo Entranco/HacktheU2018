@@ -30,17 +30,21 @@ public class PetSearch extends AppCompatActivity {
         });
     }
 
-    protected class ConnectToServer extends AsyncTask<Void, Void, Void> {
+    protected class ConnectToServer extends AsyncTask<String, String, String> {
         @Override
-        protected Void doInBackground(Void... arg0){
+        protected String doInBackground(String... args){
             try{
+                System.out.println();
                 Socket client = new Socket("10.0.2.2", 8888);
-                //System.out.println("connected successfully to " + client.getRemoteSocketAddress());
-                //OutputStream outStream = client.getOutputStream();
-                //DataOutputStream dataOut = new DataOutputStream(outStream);
-                //dataOut.writeUTF("some random stuff");
-                //DataInputStream in = new DataInputStream(.getInputStream);
-                //System.out.println(in.readUTF());
+                System.out.println("connected successfully to " + client.getRemoteSocketAddress());
+
+                OutputStream outStream = client.getOutputStream();
+                DataOutputStream dataOut = new DataOutputStream(outStream);
+
+                dataOut.writeUTF(args[0]);
+
+                DataInputStream in = new DataInputStream(client.getInputStream());
+                System.out.println(in.readUTF());
             }catch(IOException ex) {
                 System.out.println("Caught IOException when connecting to a server!");
             }
