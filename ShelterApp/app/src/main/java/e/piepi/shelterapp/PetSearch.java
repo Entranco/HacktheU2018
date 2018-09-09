@@ -27,46 +27,49 @@ public class PetSearch extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pet_search);
 
+        createBtnNextPet();
+    }
+
+    protected void createBtnNextPet() {
         // creates all of the texts and buttons to be altered
         Button btnNextPet = (Button) findViewById(R.id.btnNextPet);
 
         btnNextPet.setOnClickListener(new View.OnClickListener() {
-           public void onClick(View view) {
-               // Creates the String to send
-               String output = "nextPet ";
-               for(String el: filters) {
-                   output += el + " ";
-               }
-               output += queryCount;
+            public void onClick(View view) {
+                // Creates the String to send
+                String output = "nextPet ";
+                for (String el : filters) {
+                    output += el + " ";
+                }
+                output += queryCount;
 
-               // Sends the necessary String and Increments queryCount
-               String petInfo = "";
-               try {
-                   petInfo = new ConnectToServer().execute(output, null, null).get();
-               }catch(Exception ex) {
+                // Sends the necessary String and Increments queryCount
+                String petInfo = "";
+                try {
+                    petInfo = new ConnectToServer().execute(output, null, null).get();
+                } catch (Exception ex) {
 
-               }
-               queryCount++;
+                }
+                queryCount++;
 
-               // Creates all of the TextViews
-               TextView txtNameAge = (TextView) findViewById(R.id.txtNameAge);
-               TextView txtAnimal = (TextView) findViewById(R.id.txtAnimal);
-               TextView txtBreed = (TextView) findViewById(R.id.txtBreed);
-               TextView txtShelter = (TextView) findViewById(R.id.txtShelter);
-               TextView txtDescription = (TextView) findViewById(R.id.txtDescription);
+                // Creates all of the TextViews
+                TextView txtNameAge = (TextView) findViewById(R.id.txtNameAge);
+                TextView txtAnimal = (TextView) findViewById(R.id.txtAnimal);
+                TextView txtBreed = (TextView) findViewById(R.id.txtBreed);
+                TextView txtShelter = (TextView) findViewById(R.id.txtShelter);
+                TextView txtDescription = (TextView) findViewById(R.id.txtDescription);
 
-               // Parses the String for the necessary information and sets the fields accordingly
-               Scanner parser = new Scanner(petInfo);
-               txtNameAge.setText(parser.next().replaceAll("_", " "));
-               txtAnimal.setText(parser.next().replaceAll("_", " "));
-               txtBreed.setText(parser.next().replaceAll("_", " "));
-               txtShelter.setText(parser.next().replaceAll("_", " "));
-               txtDescription.setText(parser.next().replaceAll("_", " "));
-
-           }
+                // Parses the String for the necessary information and sets the fields accordingly
+                Scanner parser = new Scanner(petInfo);
+                txtNameAge.setText(parser.next().replaceAll("_", " "));
+                txtAnimal.setText(parser.next().replaceAll("_", " "));
+                txtBreed.setText(parser.next().replaceAll("_", " "));
+                txtShelter.setText(parser.next().replaceAll("_", " "));
+                txtDescription.setText(parser.next().replaceAll("_", " "));
+            }
         });
     }
-
+/*
     protected class ConnectToServer extends AsyncTask<String, String, String> {
         @Override
         protected String doInBackground(String... args){
@@ -91,4 +94,5 @@ public class PetSearch extends AppCompatActivity {
             return null;
         }
     }
+    */
 }
