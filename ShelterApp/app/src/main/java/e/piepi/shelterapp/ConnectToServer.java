@@ -12,7 +12,7 @@ public class ConnectToServer extends AsyncTask<String, String, String> {
     @Override
     protected String doInBackground(String... args){
         try{
-            System.out.println();
+            System.out.println("Ran Connect to Server");
             Socket client = new Socket("10.0.2.2", 8888);
             System.out.println("connected successfully to " + client.getRemoteSocketAddress());
 
@@ -27,7 +27,7 @@ public class ConnectToServer extends AsyncTask<String, String, String> {
             System.out.println("Received " + serverInfo + " from server");
             return serverInfo;
         }catch(IOException ex) {
-            System.out.println("Caught IOException when connecting to a server!");
+            ex.printStackTrace();
         }
         return null;
     }

@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.net.Socket;
+
 public class LogIn extends AppCompatActivity {
 
     @Override
@@ -26,13 +28,15 @@ public class LogIn extends AppCompatActivity {
                 EditText editUser = (EditText) findViewById(R.id.editUser);
                 EditText editPass = (EditText) findViewById(R.id.editPass);
 
-                String output = editUser.getText() + " " + editPass.getText();
+                String output = "login " + editUser.getText() + " " + editPass.getText();
+                String info = "";
                 // sends the info to the server
-                try {
-                    String info = new ConnectToServer().execute(output, null, null).get();
-                } catch (Exception ex) {
-                }
-
+                //try {
+                    //info = new ConnectToServer().execute(output, null, null).get();
+                //} catch (Exception ex) {
+                    System.out.println("Couldn't give info on submit");
+                //}
+                //if(Boolean.parseBoolean(info)
                 startActivity(new Intent(LogIn.this, PetSearch.class));
             }
         });

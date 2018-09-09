@@ -1,0 +1,10 @@
+bird1
+cat1
+dog7
+cat7
+dog2
+cat3
+dog3
+hedgehog1
+cat9
+snail1

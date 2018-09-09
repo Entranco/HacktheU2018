@@ -12,51 +12,74 @@
         android:layout_width="169dp"
         android:layout_height="42dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Contact Shelter"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDescription"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/image"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtBreed"
         android:layout_width="132dp"
         android:layout_height="30dp"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="368dp"
+        android:layout_marginTop="8dp"
         android:text="Breed"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtNameAge"
         android:layout_width="295dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="16dp"
         android:text="Name, Age"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtShelter"
         android:layout_width="133dp"
         android:layout_height="30dp"
+        android:layout_marginBottom="108dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Shelter"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="398dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtDescription"
@@ -73,40 +96,52 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtShelter"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
 
     <Button
         android:id="@+id/btnNextPet"
         android:layout_width="169dp"
         android:layout_height="42dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="196dp"
-        android:layout_marginStart="196dp"
-        android:text="Next Pet"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDescription"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="378dp"
-        android:layout_height="292dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Next Pet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="378dp"
+        android:layout_height="292dp"
+        android:maxWidth="378dp"
+        android:maxHeight="292dp"
+        android:minWidth="378dp"
+        android:minHeight="292dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/txtAnimal"
         android:layout_width="132dp"
         android:layout_height="30dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="8dp"
