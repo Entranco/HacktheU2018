@@ -1,8 +1,5 @@
 package server;
 
-
-
-
 import java.net.*;
 import java.util.Scanner;
 import java.io.*;
@@ -12,13 +9,13 @@ import java.io.*;
 
 
 
-public class server extends Thread {
+public class Server extends Thread {
    private ServerSocket serverSocket;
 
   // BitMap bit;
    int users;
-   public server(int port) throws IOException {
-      serverSocket = new ServerSocket(8888);
+   public Server(int port) throws IOException {
+      serverSocket = new ServerSocket(port);
       //serverSocket.setSoTimeout(10000);
    }
    
@@ -110,9 +107,8 @@ public class server extends Thread {
    }
    
    public static void main(String [] args) {
-      int port = 8888;
       try {
-         Thread t = new server(8888);
+         Thread t = new Server(8888);
          t.start();
       } catch (IOException e) {
          e.printStackTrace();
